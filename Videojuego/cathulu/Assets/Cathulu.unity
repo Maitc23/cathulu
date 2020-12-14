@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 202336119}
   m_Layer: 0
   m_Name: Legendario 3
-  m_TagString: Untagged
+  m_TagString: Lengendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2952,7 +2952,7 @@ GameObject:
   - component: {fileID: 645883960}
   m_Layer: 0
   m_Name: Legendario 1
-  m_TagString: Untagged
+  m_TagString: Lengendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3062,7 +3062,7 @@ GameObject:
   - component: {fileID: 701109429}
   m_Layer: 0
   m_Name: Legendario 4
-  m_TagString: Untagged
+  m_TagString: Lengendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 762872445}
   m_Layer: 0
   m_Name: Legendario 2
-  m_TagString: Untagged
+  m_TagString: Lengendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5591,7 +5591,7 @@ GameObject:
   - component: {fileID: 1469685058}
   m_Layer: 0
   m_Name: CM vcam1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6023,7 +6023,7 @@ GameObject:
   - component: {fileID: 1998208813}
   m_Layer: 0
   m_Name: Legendario 5
-  m_TagString: Untagged
+  m_TagString: Lengendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
