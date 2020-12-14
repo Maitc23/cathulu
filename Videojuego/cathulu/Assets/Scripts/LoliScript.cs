@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class LoliScript : MonoBehaviour
 {
+    public int legendarios = 0;
+    public Rigidbody rb;
     public float speed = 5f;
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     void Update()
@@ -24,4 +26,16 @@ public class LoliScript : MonoBehaviour
         transform.Translate(horizontal, 0, vertical);
 
     }
-}
+
+    void OnCollisionEnter(Collision collision)
+    {
+        // Al tocar un objeto legendario aumenta el contador
+        if (collision.collider.tag == "Legendario")
+        {
+            Debug.Log("Objeto Legendario!!!");
+            legendarios += 1;
+            Destroy(collision.gameObject);
+        }
+
+    }
+ }

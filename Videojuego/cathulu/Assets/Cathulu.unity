@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 202336119}
   m_Layer: 0
   m_Name: Legendario 3
-  m_TagString: Lengendario
+  m_TagString: Legendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2952,7 +2952,7 @@ GameObject:
   - component: {fileID: 645883960}
   m_Layer: 0
   m_Name: Legendario 1
-  m_TagString: Lengendario
+  m_TagString: Legendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3062,7 +3062,7 @@ GameObject:
   - component: {fileID: 701109429}
   m_Layer: 0
   m_Name: Legendario 4
-  m_TagString: Lengendario
+  m_TagString: Legendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3266,7 +3266,7 @@ GameObject:
   - component: {fileID: 762872445}
   m_Layer: 0
   m_Name: Legendario 2
-  m_TagString: Lengendario
+  m_TagString: Legendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5572,7 +5572,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386980725}
-  m_LocalRotation: {x: 0.26008046, y: -0.00000001661426, z: 0.000000004475045, w: 0.96558696}
+  m_LocalRotation: {x: 0.26008046, y: 0.000000016614257, z: -0.0000000044750434, w: 0.96558696}
   m_LocalPosition: {x: 25.24, y: 28.7, z: 14.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -5638,7 +5638,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469685057}
-  m_LocalRotation: {x: 0.26008046, y: -0.00000001661426, z: 0.000000004475045, w: 0.96558696}
+  m_LocalRotation: {x: 0.26008046, y: 0.000000016614257, z: -0.0000000044750434, w: 0.96558696}
   m_LocalPosition: {x: 25.24, y: 28.7, z: 14.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -5900,7 +5900,7 @@ GameObject:
   - component: {fileID: 1830514237}
   m_Layer: 0
   m_Name: Loli
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6007,6 +6007,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaab5a1ed25c88048b3d4d357ccf1d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  legendarios: 0
+  rb: {fileID: 0}
   speed: 5
 --- !u!1 &1998208812
 GameObject:
@@ -6023,7 +6025,7 @@ GameObject:
   - component: {fileID: 1998208813}
   m_Layer: 0
   m_Name: Legendario 5
-  m_TagString: Lengendario
+  m_TagString: Legendario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
