@@ -5,6 +5,7 @@ using UnityEngine;
 public class LoliScript : MonoBehaviour
 {
     public int legendarios = 0;
+    public bool cubeOnGround = false;
     public Rigidbody rb;
     public float speed = 5f;
     void Start()
@@ -19,6 +20,11 @@ public class LoliScript : MonoBehaviour
             transform.Rotate(-Vector3.up * 45 * Time.deltaTime, 1);
         else if (Input.GetKey(KeyCode.K))
             transform.Rotate(Vector3.up * 45 * Time.deltaTime, 1);
+        if (Input.GetKeyDown(KeyCode.Space) && cubeOnGround)
+        {
+            rb.AddForce(new Vector3(0, 8, 0), ForceMode.Impulse);
+            cubeOnGround = false;
+        }
 
         // Movimiento
         float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
@@ -47,6 +53,11 @@ public class LoliScript : MonoBehaviour
             {
                 Debug.Log("No posee los 5 objetos legendarios");
             }
+        }
+
+        if (collision.collider.CompareTag("Floor"))
+        {
+            cubeOnGround = true;
         }
 
     }

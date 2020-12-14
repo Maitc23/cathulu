@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Legendario
   - Portal
+  - Floor
   layers:
   - Default
   - TransparentFX
