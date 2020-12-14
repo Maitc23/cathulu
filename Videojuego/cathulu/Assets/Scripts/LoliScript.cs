@@ -12,6 +12,12 @@ public class LoliScript : MonoBehaviour
 
     void Update()
     {
+        // Rotación 
+        if (Input.GetKey(KeyCode.J))
+            transform.Rotate(-Vector3.up * 45 * Time.deltaTime, 1);
+        else if (Input.GetKey(KeyCode.K))
+            transform.Rotate(Vector3.up * 45 * Time.deltaTime, 1);
+
         // Movimiento
         float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         float vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
