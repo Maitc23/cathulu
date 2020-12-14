@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LoliScript : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class LoliScript : MonoBehaviour
     public bool cubeOnGround = false;
     public Rigidbody rb;
     public float speed = 5f;
+    public float reloj = 60f;
+    public Text timer_ui;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,6 +33,10 @@ public class LoliScript : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal") * Time.deltaTime * speed;
         float vertical = Input.GetAxis("Vertical") * Time.deltaTime * speed;
         transform.Translate(horizontal, 0, vertical);
+
+        // Timer
+        reloj -= Time.deltaTime; // Resta 1 cada segundo 
+        timer_ui.text = reloj.ToString("f0"); // Lo muestra en la ui
 
     }
 
