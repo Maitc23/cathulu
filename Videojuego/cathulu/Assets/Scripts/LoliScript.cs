@@ -37,5 +37,17 @@ public class LoliScript : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
+        if (collision.collider.tag == "Portal")
+        {
+            if (legendarios == 5)
+            {
+                Debug.Log("GG");
+            }
+            else
+            {
+                Debug.Log("No posee los 5 objetos legendarios");
+            }
+        }
+
     }
  }
