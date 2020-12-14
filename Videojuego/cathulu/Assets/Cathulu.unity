@@ -4299,6 +4299,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Isla
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ab8e0a3e465ea394e829762ee25a01ff,
+        type: 3}
+      propertyPath: m_TagString
+      value: Floor
+      objectReference: {fileID: 0}
     - target: {fileID: 922644628639305703, guid: ab8e0a3e465ea394e829762ee25a01ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5613,7 +5618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386980725}
   m_LocalRotation: {x: 0.26008046, y: -0.00000001661426, z: 0.000000004475045, w: 0.96558696}
-  m_LocalPosition: {x: 25.24, y: 28.7, z: 14.3}
+  m_LocalPosition: {x: 28.38, y: 29.641, z: 14.150001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5679,7 +5684,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469685057}
   m_LocalRotation: {x: 0.26008046, y: -0.00000001661426, z: 0.000000004475045, w: 0.96558696}
-  m_LocalPosition: {x: 25.24, y: 28.7, z: 14.3}
+  m_LocalPosition: {x: 28.38, y: 29.641, z: 14.150001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1612909386}
@@ -6029,7 +6034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830514231}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.24, y: 26.76, z: 17.64}
+  m_LocalPosition: {x: 28.38, y: 27.701, z: 17.49}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6048,6 +6053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   legendarios: 0
+  cubeOnGround: 1
   rb: {fileID: 0}
   speed: 5
 --- !u!1 &1998208812
