@@ -6,17 +6,19 @@ public class LoliScript : MonoBehaviour
     public int legendarios = 0;
     public bool cubeOnGround = false;
     public Rigidbody rb;
-    public float reloj = 60f;
+    public float reloj;
     public Text timer_ui;
+    public float speed;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        reloj = 20f;
+        speed = 2f;
     }
 
     void Update()
     {
-        float speed = 2f;
         // Rotación 
         if (Input.GetKey(KeyCode.J))
             transform.Rotate(-Vector3.up * 25 * Time.deltaTime, 1);
@@ -37,6 +39,10 @@ public class LoliScript : MonoBehaviour
         reloj -= Time.deltaTime; // Resta 1 cada segundo 
         timer_ui.text = reloj.ToString("f0"); // Lo muestra en la ui
 
+        if (reloj <= 0)
+        {
+            Debug.Log("Se acabo el tiempo");
+        }
     }
 
     void OnCollisionEnter(Collision collision)
@@ -46,6 +52,7 @@ public class LoliScript : MonoBehaviour
         {
             Debug.Log("Objeto Legendario!!!");
             legendarios += 1;
+            reloj += 20f;
             Destroy(collision.gameObject);
         }
 
