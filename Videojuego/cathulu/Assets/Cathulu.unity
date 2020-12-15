@@ -7632,7 +7632,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386980725}
-  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
   m_LocalPosition: {x: 28.48, y: 27.83, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7893,7 +7893,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469685057}
-  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
   m_LocalPosition: {x: 28.48, y: 27.83, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10143,6 +10143,7 @@ GameObject:
   - component: {fileID: 919132147865012244}
   - component: {fileID: 919132147865012246}
   - component: {fileID: 919132147865012247}
+  - component: {fileID: 919132147865012248}
   m_Layer: 0
   m_Name: octoparty
   m_TagString: Untagged
@@ -10215,6 +10216,25 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!95 &919132147865012248
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132147865012243}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bd1ee2de6095c694b9fdaa5a531e0711, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &919132148884581137
 GameObject:
   m_ObjectHideFlags: 0
