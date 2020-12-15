@@ -10,10 +10,12 @@ public class LoliScript : MonoBehaviour
     public float reloj;
     public Text timer_ui;
     public float speed;
+    public Animator anim;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
         reloj = 20f;
         speed = 2f;
     }
@@ -27,8 +29,17 @@ public class LoliScript : MonoBehaviour
             transform.Rotate(Vector3.up * 25 * Time.deltaTime, 1);
         if (Input.GetKeyDown(KeyCode.Space) && cubeOnGround)
         {
-            rb.AddForce(new Vector3(0, 3, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
             cubeOnGround = false;
+        }
+
+        if (Input.GetKeyDown("w") | Input.GetKeyDown("s") | Input.GetKeyDown("a") | Input.GetKeyDown("d")){
+            anim.Play("correrAnimation");
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) )
+        {
+            anim.Play("saltarAnimation");
         }
 
         // Movimiento

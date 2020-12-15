@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5c6202c71dfb2514ca94158de43c299b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 26.739
+      value: 26.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5c6202c71dfb2514ca94158de43c299b,
         type: 3}
@@ -217,6 +217,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018209157276255998, guid: 5c6202c71dfb2514ca94158de43c299b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.11999289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2018209157276255998, guid: 5c6202c71dfb2514ca94158de43c299b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0009704282
+      objectReference: {fileID: 0}
+    - target: {fileID: 2328788490777603682, guid: 5c6202c71dfb2514ca94158de43c299b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.11999289
+      objectReference: {fileID: 0}
+    - target: {fileID: 2328788490777603682, guid: 5c6202c71dfb2514ca94158de43c299b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00097044575
       objectReference: {fileID: 0}
     - target: {fileID: 8794160095654431216, guid: 5c6202c71dfb2514ca94158de43c299b,
         type: 3}
@@ -7612,8 +7632,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386980725}
-  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
-  m_LocalPosition: {x: 28.48, y: 27.709, z: 15.550001}
+  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalPosition: {x: 28.48, y: 27.83, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -7873,8 +7893,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469685057}
-  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
-  m_LocalPosition: {x: 28.48, y: 27.709, z: 15.550001}
+  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalPosition: {x: 28.48, y: 27.83, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1612909386}
@@ -8361,6 +8381,7 @@ MonoBehaviour:
   reloj: 0
   timer_ui: {fileID: 457242615}
   speed: 0
+  anim: {fileID: 0}
 --- !u!65 &1656944626
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8390,6 +8411,30 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!95 &1656944628
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656944623}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 439abe27bb8a5b146bda228a119b6e6c, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3f697b5161bc1904fa26d3ca8953d0f3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: "\nBinding warning: Some generic clip(s) animate transforms that
+    are already bound by a Humanoid avatar. These transforms can only be changed
+    by Humanoid clips.\n\tTransform 'upper_arm.L'\n\tTransform 'shin.L'\n\tTransform
+    'thigh.R'\n\tTransform 'toe.R'\n\tTransform 'foot.R'\n\tTransform 'forearm.L'\n\tTransform
+    'spine.003'\n\tTransform 'upper_arm.R'\n\tTransform 'forearm.R'\n\tTransform
+    'hand.R'\n\tand more ...\n\tFrom animation clip '0metarig|0metarigAction'"
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1697094879
 GameObject:
   m_ObjectHideFlags: 0
