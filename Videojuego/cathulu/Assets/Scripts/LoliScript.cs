@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class LoliScript : MonoBehaviour
 {
+    public GameObject SonidoAgarre;
     public int legendarios = 0;
     public bool cubeOnGround = false;
     public Rigidbody rb;
@@ -64,6 +65,7 @@ public class LoliScript : MonoBehaviour
         // Al tocar un objeto legendario aumenta el contador
         if (collision.collider.tag == "Legendario")
         {
+            Instantiate(SonidoAgarre);
             Debug.Log("Objeto Legendario!!!");
             legendarios += 1;
             reloj += 20f;
