@@ -11,8 +11,8 @@ public class PulpoScript : MonoBehaviour
         if (collision.collider.CompareTag("Player"))
         {
             Debug.Log("Te agarro el pulpo");
-            SceneManager.LoadScene("Menu");
-            // Mensaje de game over aqui 
+            SceneManager.LoadScene("GameOver");
+            
 
         }
 

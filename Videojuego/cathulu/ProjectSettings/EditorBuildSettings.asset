@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cathulu.unity
     guid: 392438910b63b854189135e04d2558ed
+  - enabled: 1
+    path: Assets/GameOver.unity
+    guid: f31db451c339c322fb5bb6c6c3a3ee2a
+  - enabled: 1
+    path: Assets/Victory.unity
+    guid: 3dfb5fd15912363008f533509445b418
   m_configObjects: {}

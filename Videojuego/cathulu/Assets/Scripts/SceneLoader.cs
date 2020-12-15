@@ -15,4 +15,10 @@ public class SceneLoader : MonoBehaviour
         Application.Quit();
         Debug.Log("Si sale este mensaje, significa que sirve uwu");
     }
+
+    public void ReturnMenu() 
+    {
+        SceneManager.LoadScene("Menu");
+    }
+    
 }

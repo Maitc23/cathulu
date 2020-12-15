@@ -55,8 +55,8 @@ public class LoliScript : MonoBehaviour
         if (reloj <= 0)
         {
             Debug.Log("Se acabo el tiempo");
-            SceneManager.LoadScene("Menu");
-            // Mensaje de game over aqui 
+            SceneManager.LoadScene("GameOver");
+            
         }
     }
 
@@ -77,8 +77,8 @@ public class LoliScript : MonoBehaviour
         if (collision.collider.tag == "Void")
         {
             Debug.Log("Te caiste!!!");
-            SceneManager.LoadScene("Menu");
-            // Aqui mensaje de Game over
+            SceneManager.LoadScene("GameOver");
+            
         }
 
         // Detecta el portal 
@@ -87,8 +87,8 @@ public class LoliScript : MonoBehaviour
             if (legendarios == 5)
             {
                 Debug.Log("GG");
-                SceneManager.LoadScene("Menu");
-                // Mensaje de gg aqui 
+                SceneManager.LoadScene("Victory");
+                 
 
             }
             else
