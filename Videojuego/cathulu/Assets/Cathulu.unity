@@ -3946,7 +3946,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 28
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7612,7 +7612,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1386980725}
-  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
   m_LocalPosition: {x: 28.48, y: 27.709, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -7873,7 +7873,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469685057}
-  m_LocalRotation: {x: 0.25154907, y: 0.000000025270909, z: -0.000000006568073, w: 0.96784455}
+  m_LocalRotation: {x: 0.2515491, y: -0.0000000038257104, z: 9.943272e-10, w: 0.96784455}
   m_LocalPosition: {x: 28.48, y: 27.709, z: 15.550001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10117,7 +10117,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
