@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class LoliScript : MonoBehaviour
@@ -8,9 +6,9 @@ public class LoliScript : MonoBehaviour
     public int legendarios = 0;
     public bool cubeOnGround = false;
     public Rigidbody rb;
-    public float speed = 5f;
     public float reloj = 60f;
     public Text timer_ui;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -18,14 +16,15 @@ public class LoliScript : MonoBehaviour
 
     void Update()
     {
+        float speed = 2f;
         // Rotación 
         if (Input.GetKey(KeyCode.J))
-            transform.Rotate(-Vector3.up * 45 * Time.deltaTime, 1);
+            transform.Rotate(-Vector3.up * 25 * Time.deltaTime, 1);
         else if (Input.GetKey(KeyCode.K))
-            transform.Rotate(Vector3.up * 45 * Time.deltaTime, 1);
+            transform.Rotate(Vector3.up * 25 * Time.deltaTime, 1);
         if (Input.GetKeyDown(KeyCode.Space) && cubeOnGround)
         {
-            rb.AddForce(new Vector3(0, 8, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 3, 0), ForceMode.Impulse);
             cubeOnGround = false;
         }
 
