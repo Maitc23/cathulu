@@ -18,7 +18,7 @@ public class LoliScript : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         reloj = 20f;
-        speed = 2f;
+        speed = 1.3f;
     }
 
     void Update()
@@ -30,7 +30,7 @@ public class LoliScript : MonoBehaviour
             transform.Rotate(Vector3.up * 25 * Time.deltaTime, 1);
         if (Input.GetKeyDown(KeyCode.Space) && cubeOnGround)
         {
-            rb.AddForce(new Vector3(0, 5, 0), ForceMode.Impulse);
+            rb.AddForce(new Vector3(0, 4, 0), ForceMode.Impulse);
             cubeOnGround = false;
         }
 
@@ -68,7 +68,7 @@ public class LoliScript : MonoBehaviour
             Instantiate(SonidoAgarre);
             Debug.Log("Objeto Legendario!!!");
             legendarios += 1;
-            reloj += 20f;
+            reloj += 10f;
             Destroy(collision.gameObject);
 
         }
@@ -77,6 +77,7 @@ public class LoliScript : MonoBehaviour
         if (collision.collider.tag == "Void")
         {
             Debug.Log("Te caiste!!!");
+            SceneManager.LoadScene("Menu");
             // Aqui mensaje de Game over
         }
 
