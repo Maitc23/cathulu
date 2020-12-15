@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoliScript : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class LoliScript : MonoBehaviour
         if (reloj <= 0)
         {
             Debug.Log("Se acabo el tiempo");
+            SceneManager.LoadScene("Menu");
+            // Mensaje de game over aqui 
         }
     }
 
@@ -61,6 +64,9 @@ public class LoliScript : MonoBehaviour
             if (legendarios == 5)
             {
                 Debug.Log("GG");
+                SceneManager.LoadScene("Menu");
+                // Mensaje de gg aqui 
+
             }
             else
             {
