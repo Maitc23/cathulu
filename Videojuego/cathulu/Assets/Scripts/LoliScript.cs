@@ -70,8 +70,17 @@ public class LoliScript : MonoBehaviour
             legendarios += 1;
             reloj += 20f;
             Destroy(collision.gameObject);
+
         }
 
+        // Detecta la caida del mundo
+        if (collision.collider.tag == "Void")
+        {
+            Debug.Log("Te caiste!!!");
+            // Aqui mensaje de Game over
+        }
+
+        // Detecta el portal 
         if (collision.collider.tag == "Portal")
         {
             if (legendarios == 5)
@@ -87,6 +96,7 @@ public class LoliScript : MonoBehaviour
             }
         }
 
+        // Detecta la superficie de la isla
         if (collision.collider.CompareTag("Floor"))
         {
             cubeOnGround = true;
